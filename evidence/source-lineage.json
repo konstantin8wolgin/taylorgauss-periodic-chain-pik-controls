@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/konstantin8wolgin/taylorgauss-research",
+  "upstream_base_commit": "4b2502f9cbd46f61d9b4b41cd1402ae2d072443f",
+  "controlling_files_git_status": "untracked",
+  "lineage_note": "The base commit identifies the audited worktree state but does not contain the controlling files; SHA-256 is their content authority.",
+  "files": {
+    "ccc/taylorgauss/chain4_authority.py": "1d7909c8b880f9e792a6a439bd0f3e2ba43e483d3496c825aaa456d987820b20",
+    "ccc/taylorgauss/chain4_multislice.py": "0d83e4f19bb62b59dd334525294677cce0283c208a3b5d56d91d2f807d132bae",
+    "ccc/taylorgauss/chain4_pik.py": "56f022fff3f83d984089434fee7ed69da2c1f15269397b6c217255be677b6395",
+    "ccc/taylorgauss/chain6_fock.py": "1523eeb75043183d51ebcc3ce0f930b95040f6f7c8e17edbd3dfbc533ec7be2f",
+    "ccc/taylorgauss/chain6_pik.py": "5d102a48821f79620231aa75356d0965134c1d208e06294a9c82457fe535ab64",
+    "ccc/taylorgauss/chain6_run.py": "66ae03236e9ec54259c0ea335c6851d081933b902abbb16b38a09dc3a0c2380f",
+    "ccc/tests/test_chain4_multislice.py": "6401335eb4b81dd11cbc4802967d702f85e6c83f5f27a21fabb1519090c4027b",
+    "ccc/tests/test_chain4_pilot.py": "ed375ca0dde3b27eef0ca9134fd030352f8408f07db8d6a460e4c9aa250d6a84",
+    "ccc/tests/test_chain6_fock.py": "7832df60e1c782aa5892292d85d798864470837228024bde06dc58af3c3b7669",
+    "ccc/tests/test_chain6_pik.py": "58d738104b43e1fbce51ce1452a50e2edc3f042dd6507ff522095fbce411c25e",
+    "docs/chain4-pilot.md": "ef0191b280be04fbdde7d1cd1927c379a4eda0d34c85251168339bebf510e5cb",
+    "docs/chain4-nt34-results.md": "760bb760f1337d6059d92c67f06a289d8add5244a9c9c0248152cb266d9058a6",
+    "docs/chain6-nt1-results.md": "43a40fe03efdb1c7bcf6779fa69cc776e8589b8539dcb112d2b2612e6c0bbb41",
+    "docs/evidence/2026-09-08-chain4-pilot.json": "89dbd3e2069b470976182c9f716cb69f6bdf3ff8ab7507ed342c6e46c89a3267",
+    "docs/evidence/2026-09-09-chain4-nt34.json": "03965d6cf9456d09c1f037fb8cc4450114a0c3f6196f31eaf17b1c9e8dc38fdd",
+    "docs/evidence/2026-09-09-chain6-nt1.json": "4807755ce283002b1e6fc8d549b7de789826423e38dbdb3563c2ec51d035bfee"
+  },
+  "excluded_artifacts": [
+    "Dense N=4 coefficient and absolute-history arrays (about 688.75 MB per N_t=4 run)",
+    "Full or representative private local-state run directories",
+    "Full Gaussian sample streams and machine-specific CUDA replay artifacts"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "release": {
+    "version": "0.1.0",
+    "tag": "v0.1.0",
+    "repository": "https://github.com/konstantin8wolgin/taylorgauss-periodic-chain-pik-controls",
+    "containing_commit": "SELF: resolve as the v0.1.0 tag target",
+    "visibility": "public"
+  },
+  "source_lineage": {
+    "upstream_repository": "https://github.com/konstantin8wolgin/taylorgauss-research",
+    "upstream_base_commit": "4b2502f9cbd46f61d9b4b41cd1402ae2d072443f",
+    "upstream_controlling_files_status": "untracked; content pinned by SHA-256",
+    "audited_file_hash_manifest": "evidence/source-lineage.json",
+    "copied_authority_modules": 6,
+    "copied_authority_modules_byte_identical": true
+  },
+  "line_counts": {
+    "copied_authority_code": 1465,
+    "standalone_facades_and_package_init": 92,
+    "total_source_code": 1557,
+    "focused_tests": 203,
+    "by_file": {
+      "src/taylorgauss_pik/__init__.py": 3,
+      "src/taylorgauss_pik/chain4.py": 44,
+      "src/taylorgauss_pik/chain4_authority.py": 189,
+      "src/taylorgauss_pik/chain4_multislice.py": 384,
+      "src/taylorgauss_pik/chain4_pik.py": 294,
+      "src/taylorgauss_pik/chain6.py": 45,
+      "src/taylorgauss_pik/chain6_fock.py": 112,
+      "src/taylorgauss_pik/chain6_pik.py": 300,
+      "src/taylorgauss_pik/chain6_run.py": 186,
+      "tests/test_chain4.py": 92,
+      "tests/test_chain6.py": 111
+    }
+  },
+  "verification": {
+    "upstream_read_only_replay": {
+      "result": "57 passed",
+      "scope": "four controlling chain4/chain6 test modules",
+      "writes_disabled": "Python bytecode and pytest cache disabled"
+    },
+    "standalone_default_with_sampler": {
+      "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -ra -p no:cacheprovider",
+      "result": "22 passed, 1 slow test deselected"
+    },
+    "isolated_core_environment": {
+      "command": ".venv/bin/python -m pytest -ra -p no:cacheprovider",
+      "result": "20 passed, 2 optional-torch tests skipped, 1 slow test deselected"
+    },
+    "independent_review": {
+      "initial_result": "16 default tests passed and 1 full dense slow test passed",
+      "findings_fixed": [
+        "Corrected holomorphic and multislice observable equations",
+        "Enforced the frozen N=6,N_t=1 case at the public authority facade",
+        "Declared Linux support and corrected the standalone runner namespace"
+      ],
+      "rereview_result": "Ready to publish; 22 tests passed, 1 slow test deselected; all provenance hashes match"
+    },
+    "wheel_smoke_test": "Fresh temporary virtual environment installed the wheel; version, N=4 trace, and frozen N=6 authority passed",
+    "json_validation": "passed",
+    "git_diff_check": "passed",
+    "privacy_scan": "no private absolute paths, local-state paths, credential patterns, or secrets found"
+  },
+  "build": {
+    "python": "3.12.3",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pytest": "9.1.1",
+    "build": "1.6.1",
+    "wheel": {
+      "file": "taylorgauss_periodic_chain_pik_controls-0.1.0-py3-none-any.whl",
+      "sha256": "793ef315cb8a2da173839219ecaa5d5ca5e004baebb9fe6b0fb5d99468b4688e"
+    },
+    "sdist": {
+      "file": "taylorgauss_periodic_chain_pik_controls-0.1.0.tar.gz",
+      "sha256": "9f916c52934d1c5dfdfe3675c63585a00524361680e11daf7f0e4f103a9fba3f"
+    }
+  },
+  "scientific_scope": {
+    "implemented": [
+      "N=4,N_t=1..4 exact bounded finite-slice Gaussian-shift controls",
+      "N=6,N_t=1 frozen case-B confirmed lazy-map sampler and independent finite-slice/Hamiltonian authorities"
+    ],
+    "limits": [
+      "N=4,N_t=4 is a 43,046,721-label dense construction and negative scaling evidence",
+      "N=6,N_t=1 has substantial Trotter bias relative to Hamiltonian ED",
+      "The authorities are floating-point finite-dimensional checks, not interval or continuum certificates",
+      "N=6 preprocessing retains 4096 Fock states and scales exponentially in N"
+    ],
+    "not_implemented_or_claimed": [
+      "N=6,N_t=2",
+      "N=7 or large N",
+      "N_t near 50",
+      "sparse-event or compressed sampling",
+      "continuum-time accuracy",
+      "a sign-problem solution"
+    ]
+  }
+}

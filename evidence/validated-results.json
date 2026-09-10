@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "authority_kind": "floating-point exact finite-dimensional finite-slice formulas",
+  "chain4": {
+    "implemented_scope": {"n_sites": 4, "n_t": [1, 2, 3, 4]},
+    "physical_absolute_tolerance": 1e-10,
+    "determinant_scaled_tolerance": 1e-8,
+    "n_t_3": {"labels": 531441, "nonzero_channels": 10689, "negative_channels": 0},
+    "n_t_4": {
+      "labels": 43046721,
+      "nonzero_channels": 139173,
+      "negative_channels_cases_A_B_C": [11296, 11296, 10400],
+      "integrated_phase_cases_A_B_C": [0.99678517, 0.99659158, 0.99999349],
+      "closed_form_negative_coefficient_case_A": -0.00637424864053005068,
+      "cancellation_to_floating_zero_channels": 1280,
+      "two_dense_arrays_bytes": 688747536,
+      "measured_peak_rss_bytes_range": [1245634560, 1248014336]
+    },
+    "scaling_limit": "Each additional time slice multiplies dense label storage by 81; this is negative evidence, not a many-slice route."
+  },
+  "chain6": {
+    "implemented_scope": {"n_sites": 6, "n_t": 1, "beta": 1.0, "U": 4.0, "mu": 1.0, "kappa": 1.0},
+    "confirmation": {"seeds": 128, "draws_per_seed": 1703936, "total_draws": 218103808, "passed": true},
+    "finite_n_t": {"log_partition": 14.024742079707293, "density": 1.108646416446819, "double_occupancy": 0.13035215212424592},
+    "hamiltonian": {"log_partition": 13.16781669816179, "density": 1.1415980551663614, "double_occupancy": 0.20104322839752392},
+    "finite_minus_hamiltonian": {"log_partition": 0.8569253815455031, "density": -0.03295163871954232, "double_occupancy": -0.070691076273278},
+    "state_count": 4096,
+    "largest_spinful_block": 400,
+    "spatial_scaling": "exponential in N",
+    "bias_note": "The confirmed sampler targets N_t=1 accurately, but the finite-slice target has substantial Trotter bias relative to Hamiltonian ED."
+  },
+  "not_implemented_or_claimed": [
+    "N=6,N_t=2",
+    "N=7",
+    "large N",
+    "N_t near 50",
+    "sparse-event sampling",
+    "continuum-time accuracy or extrapolation",
+    "a general sign-problem solution"
+  ]
+}
