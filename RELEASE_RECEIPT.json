@@ -70,11 +70,11 @@
     "build": "1.6.1",
     "wheel": {
       "file": "taylorgauss_periodic_chain_pik_controls-0.1.0-py3-none-any.whl",
-      "sha256": "793ef315cb8a2da173839219ecaa5d5ca5e004baebb9fe6b0fb5d99468b4688e"
+      "sha256": "b70574e44b11f2f5becb852fac3a84c99aeffe688de913a9d62beef00eff9cb5"
     },
     "sdist": {
       "file": "taylorgauss_periodic_chain_pik_controls-0.1.0.tar.gz",
-      "sha256": "9f916c52934d1c5dfdfe3675c63585a00524361680e11daf7f0e4f103a9fba3f"
+      "sha256": "7bd9df262b25efff37b268e2eaa009844bf7ca989f7f1ed8d8089d0cf09f9ace"
     }
   },
   "scientific_scope": {
